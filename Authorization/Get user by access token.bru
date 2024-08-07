@@ -1,0 +1,20 @@
+meta {
+  name: Get user by access token
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseurl}}/get-user-by-access_token
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  ~: 
+}
+
+body:json {
+  {"access_token":"4|8Uk9myr6jNQnO0UB3eQhbHx3Ihiyoej3sezvsLAF8bb0965f"}
+}

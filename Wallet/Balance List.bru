@@ -1,0 +1,15 @@
+meta {
+  name: Balance List
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseurl}}/wallet/history/8
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Signin an user
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseurl}}/auth/login
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  X-Requested-With: XMLHttpRequest
+}
+
+body:json {
+  {
+  	"email": "7722123331", // or email
+  	"password": "password"
+  }
+}

@@ -1,0 +1,16 @@
+meta {
+  name: summary
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseurl}}/cart-summary
+  body: none
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}

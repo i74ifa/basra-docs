@@ -1,0 +1,15 @@
+meta {
+  name: earning or collection summary
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseurl}}/{{delivery-boy-prefix}}/earning/{{delivery-boy-user-id}}
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

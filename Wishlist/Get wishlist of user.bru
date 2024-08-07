@@ -1,0 +1,19 @@
+meta {
+  name: Get wishlist of user
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseurl}}/wishlists/8
+  body: none
+  auth: none
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

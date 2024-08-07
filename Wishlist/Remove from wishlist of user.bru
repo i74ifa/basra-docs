@@ -1,0 +1,15 @@
+meta {
+  name: Remove from wishlist of user
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseurl}}/wishlists/1
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

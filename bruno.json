@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Basra amazon",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

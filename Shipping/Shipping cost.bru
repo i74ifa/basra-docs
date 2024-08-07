@@ -1,0 +1,24 @@
+meta {
+  name: Shipping cost
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseurl}}/shipping_cost
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {
+      "owner_id":16,
+      "user_id":8,
+      "city_name":"Chittagong"
+  }
+}

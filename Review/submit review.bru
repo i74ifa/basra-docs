@@ -1,0 +1,20 @@
+meta {
+  name: submit review
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseurl}}/reviews/submit
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {"product_id":"208","user_id":"8","rating":"2","comment":"sfdsfdsf"}
+}

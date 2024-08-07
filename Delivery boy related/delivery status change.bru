@@ -1,0 +1,24 @@
+meta {
+  name: delivery status change
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseurl}}/{{delivery-boy-prefix}}/change-delivery-status
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {
+      "order_id":1025,
+      "delivery_boy_id":{{delivery-boy-user-id}},
+      "status":"delivered"
+  }
+}

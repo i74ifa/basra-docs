@@ -1,0 +1,26 @@
+meta {
+  name: Add
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseurl}}/carts/add
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {
+      "id":642,
+      "variant":"6",
+      "color": "FFB6C1",
+      "user_id":9,
+      "quantity":1
+  }
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get user addresses
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseurl}}/user/shipping/address
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}

@@ -1,0 +1,24 @@
+meta {
+  name: coupon apply
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseurl}}/coupon-apply
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {
+      "user_id":{{user_id}},
+      "owner_id":1,
+      "coupon_code":"8979824y987"
+  }
+}

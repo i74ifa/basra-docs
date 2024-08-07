@@ -1,0 +1,18 @@
+meta {
+  name: Get variant price  of product
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseurl}}/products/variant/price?color=F0F8FF&variants=200ml&slug=low-ph-goodmorning-gel-cleanser-2
+  body: none
+  auth: none
+}
+
+params:query {
+  color: F0F8FF
+  variants: 200ml
+  slug: low-ph-goodmorning-gel-cleanser-2
+  ~id: 642
+}

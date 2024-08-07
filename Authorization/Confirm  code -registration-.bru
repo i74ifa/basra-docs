@@ -1,0 +1,23 @@
+meta {
+  name: Confirm  code -registration-
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseurl}}/auth/confirm_code
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  X-Requested-With: XMLHttpRequest
+}
+
+body:json {
+  {
+  	"user_id": "",
+  	"verification_code": ""
+  }
+}

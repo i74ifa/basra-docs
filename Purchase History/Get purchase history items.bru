@@ -1,0 +1,15 @@
+meta {
+  name: Get purchase history items
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseurl}}/purchase-history-items/1141
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

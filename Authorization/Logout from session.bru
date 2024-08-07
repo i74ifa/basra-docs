@@ -1,0 +1,15 @@
+meta {
+  name: Logout from session
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseurl}}/auth/logout
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

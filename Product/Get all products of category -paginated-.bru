@@ -1,0 +1,17 @@
+meta {
+  name: Get all products of category -paginated-
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseurl}}/products/category/1?page=1&name=
+  body: none
+  auth: none
+}
+
+params:query {
+  page: 1
+  name: 
+  ~: 
+}

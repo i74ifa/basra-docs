@@ -1,0 +1,20 @@
+meta {
+  name: Check if product is in users wishlist
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseurl}}/wishlists-check-product?product_id=11&user_id=8
+  body: none
+  auth: none
+}
+
+params:query {
+  product_id: 11
+  user_id: 8
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: get counters
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseurl}}/profile/counters/{{user_id}}
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

@@ -1,0 +1,18 @@
+meta {
+  name: stripe screen
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseurl}}/stripe?payment_type=cart_payment&order_id=1147&amount=23.50&user_id={{user_id}}
+  body: none
+  auth: none
+}
+
+params:query {
+  payment_type: cart_payment
+  order_id: 1147
+  amount: 23.50
+  user_id: {{user_id}}
+}

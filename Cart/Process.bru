@@ -1,0 +1,24 @@
+meta {
+  name: Process
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseurl}}/carts/process
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {
+      "cart_ids":"3",
+      "cart_quantities":"1"
+      
+  }
+}

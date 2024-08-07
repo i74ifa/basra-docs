@@ -1,0 +1,20 @@
+meta {
+  name: Delivery List
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseurl}}/{{delivery-boy-prefix}}/deliveries/completed/{{delivery-boy-user-id}}?date_range=""&payment_type=""
+  body: none
+  auth: none
+}
+
+params:query {
+  date_range: ""
+  payment_type: ""
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

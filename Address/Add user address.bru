@@ -1,0 +1,28 @@
+meta {
+  name: Add user address
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseurl}}/user/shipping/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {
+      "user_id":8,
+      "address":"Now or never",
+      "country":"Bangladesh",
+      "city":"Comilla",
+      "postal_code":"64643213456",
+      "phone":"8765461215464"
+      
+  }
+}

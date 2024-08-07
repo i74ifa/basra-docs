@@ -1,0 +1,15 @@
+meta {
+  name: Delete address
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseurl}}/user/shipping/delete/3
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{auth-token}}
+}

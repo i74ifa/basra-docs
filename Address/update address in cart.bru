@@ -1,0 +1,23 @@
+meta {
+  name: update address in cart
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseurl}}/update-address-in-cart
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{auth-token}}
+}
+
+body:json {
+  {
+      "user_id":{{user_id}},
+      "address_id":13
+  }
+}
